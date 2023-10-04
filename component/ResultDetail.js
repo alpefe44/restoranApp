@@ -2,6 +2,7 @@ import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { FontAwesome } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
+import { Entypo } from '@expo/vector-icons';
 
 const ResultDetail = ({ detail }) => {
 
@@ -10,7 +11,7 @@ const ResultDetail = ({ detail }) => {
   function goDetail(item) {
     navigate('DetailScreen', {
       restoranId: item.id,
-      restoranName : item.name
+      restoranName: item.name
     })
   }
   return (
@@ -20,8 +21,9 @@ const ResultDetail = ({ detail }) => {
           <Image style={[{ flex: 1, borderRadius: 20 }]} source={{ uri: detail?.image_url }}></Image>
           <View style={{ flexDirection: 'row', position: 'absolute', right: 0, backgroundColor: 'white', borderBottomLeftRadius: 10, padding: 5, alignItems: 'center' }}>
             <Text style={{ fontWeight: 'bold', color: 'orange' }}>{detail?.rating}</Text>
-            <View style={{ marginLeft: 3 }}>
+            <View style={{ marginHorizontal: 3 , flexDirection:'row'}}>
               <FontAwesome name="star" size={14} color="yellow" />
+              {detail.is_closed ? null : <Entypo name="shopping-cart" size={14} color="black" style = {{marginLeft:5}}/>}
             </View>
           </View>
         </View>

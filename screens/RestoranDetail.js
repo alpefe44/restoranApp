@@ -30,7 +30,7 @@ const RestoranDetail = ({ route, navigation }) => {
 
 
   return (
-    <View style={{ alignItems: 'center' }}>
+    <View style={{ alignItems: 'center' , flex:1}}>
       <View style={{ marginTop: 15, alignItems: 'center' }}>
         <Text style={{ fontSize: 20 }}>{results.name}</Text>
         <Text style={{ fontSize: 20 }}>{results.phone}</Text>
