@@ -7,4 +7,4 @@
 ![ea3](https://github.com/alpefe44/restoranApp/assets/71967433/9c265e9f-8c7a-4bec-be07-4046f136cf50)
 
 
-Restoranları yemek ismi arayarak listeleyebileceğimiz ve fiyat bandında restoranları bölen küçük bir uygulama.
+Restoranları yemek ismi arayarak listeleyebileceğimiz ve fiyat bandında restoranları bölen ve haritadaki konumunu gösteren küçük bir uygulama.
